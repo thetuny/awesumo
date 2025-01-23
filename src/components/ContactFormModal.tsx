@@ -12,9 +12,9 @@ export default function ContactFormModal() {
 
   return (
     <>
-      <button onClick={openModal} className="bg-white text-blue-600 hover:bg-gray-100">
+      <Button onClick={openModal} size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
         Get Started
-      </button>
+      </Button>
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg shadow-xl w-full max-w-3xl">

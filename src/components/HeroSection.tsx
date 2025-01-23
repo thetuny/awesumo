@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import ContactFormModal from "./ContactFormModal"
 
 export default function HeroSection() {
   return (
@@ -14,9 +14,7 @@ export default function HeroSection() {
             <p className="text-xl md:text-1xl mb-8">
               Wow customers with <b>AUTHENTIC</b> and <b>PERSONAL</b> conversations
             </p>
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              Get Started
-            </Button>
+            <ContactFormModal />
           </div>
           <div className="hidden md:block">
             <Image
