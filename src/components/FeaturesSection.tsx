@@ -1,24 +1,24 @@
-import { Zap, Users, BarChart, Lock } from "lucide-react"
+import { BarChart, Lock, Users, Zap } from "lucide-react"
 
 const features = [
   {
-    name: "Lightning Fast",
-    description: "Our platform is optimized for speed, ensuring quick load times and real-time updates.",
+    name: "Integrate",
+    description: "Integrate Tuny directly in your conversational marketing tools like ManyChat, Chatfuel, and more.",
     icon: Zap,
   },
   {
-    name: "Team Collaboration",
-    description: "Work seamlessly with your team members, share resources, and communicate effectively.",
+    name: "Authentic Voice",
+    description: "Train Tuny to talk like you, using your own words, phrases, and tone.",
     icon: Users,
   },
   {
-    name: "Advanced Analytics",
-    description: "Gain valuable insights with our powerful analytics and reporting tools.",
+    name: "Personalize",
+    description: "Tuny can learn your business, and personalize responses to your customers.",
     icon: BarChart,
   },
   {
-    name: "Enterprise-grade Security",
-    description: "Rest easy knowing your data is protected with state-of-the-art security measures.",
+    name: "State of the Art",
+    description: "Dont worry about keeping up with AI. We do that for you.",
     icon: Lock,
   },
 ]
@@ -29,10 +29,10 @@ export default function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Powerful Features to Boost Your Productivity
+            Powerful Features 
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            StreamLine offers a wide range of features to help you work smarter, not harder.
+            Tuny offers a wide range of features to turn leads into customers.
           </p>
         </div>
         <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">

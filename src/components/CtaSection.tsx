@@ -7,7 +7,7 @@ export default function CtaSection() {
         <h2 className="text-3xl font-extrabold sm:text-4xl mb-4">Ready to Streamline Your Workflow?</h2>
         <p className="text-xl mb-8">Join thousands of teams already using StreamLine to boost their productivity.</p>
         <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-          Start Your Free Trial
+          Get Started
         </Button>
       </div>
     </div>

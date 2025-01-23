@@ -1,4 +1,5 @@
 
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   /**
    * Enable static exports for the App Router.
@@ -12,7 +13,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: "/awesumo",
+  basePath: isProd ? "/awesumo" : '',
 
   /**
    * Disable server-based image optimization. Next.js does not support
@@ -23,6 +24,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  assetPrefix: isProd ? '/awesumo/' : '',
 };
 
 export default nextConfig;

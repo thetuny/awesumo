@@ -8,18 +8,19 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-              Simplify Your Workflow with StreamLine
+              Integrate AI in Conversational Marketing Tools
             </h1>
-            <p className="text-xl md:text-2xl mb-8">
-              Boost productivity and collaboration with our powerful SaaS platform.
+            <br />
+            <p className="text-xl md:text-1xl mb-8">
+              Wow customers with <b>AUTHENTIC</b> and <b>PERSONAL</b> conversations
             </p>
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              Start Free Trial
+              Get Started
             </Button>
           </div>
           <div className="hidden md:block">
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/awesumo/placeholder.svg?height=400&width=600"
               alt="StreamLine Dashboard"
               width={600}
               height={400}
