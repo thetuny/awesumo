@@ -1,32 +1,38 @@
-import { MessageSquareCode } from "lucide-react"
-import ContactFormModal from "./ContactFormModal"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <header className="absolute top-0 left-0 right-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <MessageSquareCode className="h-8 w-8 text-blue-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">Tuny</span>
+            <Link href="/" className="text-2xl font-bold text-white">
+              StreamLine
+            </Link>
           </div>
-          {/* <nav className="hidden md:flex space-x-10">
-            <Link href="#features" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Features
+          <nav className="hidden md:flex space-x-8">
+            <Link href="#product" className="text-sm text-gray-300 hover:text-white">
+              Product
             </Link>
-            <Link href="#testimonials" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Testimonials
+            <Link href="#how-it-works" className="text-sm text-gray-300 hover:text-white">
+              How it works
             </Link>
-            <Link href="#pricing" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Pricing
+            <Link href="#solutions" className="text-sm text-gray-300 hover:text-white">
+              Solutions
             </Link>
-          </nav> */}
-          <div className="flex items-center">
-            {/* <Button variant="ghost" className="text-gray-500 hover:text-gray-900">
-              Log in
+            <Link href="#company" className="text-sm text-gray-300 hover:text-white">
+              Company
+            </Link>
+            <Link href="#careers" className="text-sm text-gray-300 hover:text-white">
+              Careers
+            </Link>
+          </nav>
+          <div className="flex items-center space-x-4">
+            <Button variant="ghost" className="text-sm text-gray-300 hover:text-white">
+              Login
             </Button>
-            <Button className="ml-8">Get Started</Button> */}
-            <ContactFormModal />
+            <Button className="text-sm bg-white text-black hover:bg-gray-200">Get Started</Button>
           </div>
         </div>
       </div>

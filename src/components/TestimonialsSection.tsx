@@ -5,19 +5,19 @@ const testimonials = [
     content: "StreamLine has revolutionized our team's workflow. We're more productive than ever!",
     author: "Jane Cooper",
     role: "CEO, TechCorp",
-    image: "/awesumo/placeholder.svg?height=100&width=100",
+    image: "/placeholder.svg?height=100&width=100",
   },
   {
     content: "The analytics features have given us invaluable insights into our business processes.",
     author: "John Doe",
     role: "CTO, InnovateCo",
-    image: "/awesumo/placeholder.svg?height=100&width=100",
+    image: "/placeholder.svg?height=100&width=100",
   },
   {
     content: "Customer support is top-notch. They're always there when we need them.",
     author: "Alice Johnson",
     role: "Operations Manager, StartupX",
-    image: "/awesumo/placeholder.svg?height=100&width=100",
+    image: "/placeholder.svg?height=100&width=100",
   },
 ]
 
@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
               <p className="text-gray-600 mb-4">"{testimonial.content}"</p>
               <div className="flex items-center">
                 <Image
-                  src={testimonial.image || "/awesumo/placeholder.svg"}
+                  src={testimonial.image || "/placeholder.svg"}
                   alt={testimonial.author}
                   width={40}
                   height={40}

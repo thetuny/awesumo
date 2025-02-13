@@ -1,8 +1,8 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { X } from "lucide-react"
 import { useState } from "react"
+import { X } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function ContactFormModal() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,9 +12,9 @@ export default function ContactFormModal() {
 
   return (
     <>
-      <Button onClick={openModal} size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-        Get Started
-      </Button>
+      <button onClick={openModal} className="text-gray-400 hover:text-white">
+        Contact
+      </button>
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg shadow-xl w-full max-w-3xl">

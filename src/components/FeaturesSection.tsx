@@ -1,53 +1,59 @@
-import { BarChart, Lock, Users, Zap } from "lucide-react"
+import { Brain, Search, Shield, Clock, BarChart, Users } from "lucide-react"
 
 const features = [
   {
-    name: "Integrate",
-    description: "Integrate Tuny directly in your conversational marketing tools like ManyChat, Chatfuel, and more.",
-    icon: Zap,
+    title: "AI-Powered Research",
+    description: "Leverage advanced Gen-AI technology to accelerate your research process",
+    icon: Brain,
   },
   {
-    name: "Authentic Voice",
-    description: "Train Tuny to talk like you, using your own words, phrases, and tone.",
-    icon: Users,
+    title: "Comprehensive Analysis",
+    description: "Deep insights across multiple data sources and documents",
+    icon: Search,
   },
   {
-    name: "Personalize",
-    description: "Tuny can learn your business, and personalize responses to your customers.",
+    title: "Enterprise Security",
+    description: "Bank-grade security with privacy-first architecture",
+    icon: Shield,
+  },
+  {
+    title: "Time Efficiency",
+    description: "Reduce research time by up to 70% with automated analysis",
+    icon: Clock,
+  },
+  {
+    title: "Advanced Analytics",
+    description: "Custom reports and analytics for deeper insights",
     icon: BarChart,
   },
   {
-    name: "State of the Art",
-    description: "Dont worry about keeping up with AI. We do that for you.",
-    icon: Lock,
+    title: "Team Collaboration",
+    description: "Seamless sharing and collaboration features",
+    icon: Users,
   },
 ]
 
 export default function FeaturesSection() {
   return (
-    <div className="bg-gray-50 py-24" id="features">
+    <section className="py-24 bg-[#242424]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Powerful Features 
-          </h2>
-          <p className="mt-4 text-xl text-gray-600">
-            Tuny offers a wide range of features to turn leads into customers.
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-light mb-4">Powerful Features for Modern Research</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Transform your research and due diligence process with our comprehensive suite of AI-powered tools
           </p>
         </div>
-        <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature) => (
-            <div key={feature.name} className="bg-white rounded-lg shadow-md p-6">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
-                <feature.icon className="h-6 w-6" />
-              </div>
-              <h3 className="mt-4 text-lg font-medium text-gray-900">{feature.name}</h3>
-              <p className="mt-2 text-base text-gray-600">{feature.description}</p>
+            <div key={feature.title} className="p-6 rounded-lg bg-[#1C1C1C]">
+              <feature.icon className="h-8 w-8 text-white mb-4" />
+              <h3 className="text-xl font-medium mb-2">{feature.title}</h3>
+              <p className="text-gray-400">{feature.description}</p>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
