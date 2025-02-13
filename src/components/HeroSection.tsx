@@ -8,18 +8,18 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-              Integrate AI in Conversational Marketing Tools
+              Create messaging agents with complete control
             </h1>
             <br />
             <p className="text-xl md:text-1xl mb-8">
-              Wow customers with <b>AUTHENTIC</b> and <b>PERSONAL</b> conversations
+              Avoid AI blackboxes. Deploy tailored AI to automate lead interactions.
             </p>
             <ContactFormModal />
           </div>
           <div className="hidden md:block">
             <Image
               src="/awesumo/placeholder.svg?height=400&width=600"
-              alt="StreamLine Dashboard"
+              alt="Tuny Dashboard"
               width={600}
               height={400}
               className="rounded-lg shadow-xl"

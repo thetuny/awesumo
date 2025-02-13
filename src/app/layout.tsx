@@ -6,8 +6,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "StreamLine - Simplify Your Workflow",
-  description: "StreamLine is a powerful SaaS platform that helps teams collaborate and streamline their workflows.",
+  title: "Tuny - Automate your marketing with AI",
+  description: "Tuny is a conversational marketing automation tool that uses AI to turn leads into customers.",
 }
 
 export default function RootLayout({
