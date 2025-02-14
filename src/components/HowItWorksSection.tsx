@@ -14,7 +14,7 @@ const steps = [
   {
     number: "03",
     title: "Auto-Post",
-    description: "Let AI handle your social media updates and engagement",
+    description: "Let Tuny handle your social media updates",
   },
   {
     number: "04",

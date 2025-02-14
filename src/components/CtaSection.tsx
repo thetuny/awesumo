@@ -1,16 +1,11 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import TallyFormModal from "./TallyFormModal"
 
 export default function CtaSection() {
-  const [email, setEmail] = useState("")
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Email submitted:", email)
-  }
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
     <section className="py-24 bg-gradient-to-br from-[#1C1C1C] to-[#2C1B47]">
@@ -19,19 +14,11 @@ export default function CtaSection() {
         <p className="text-gray-300 mb-8">
           Join leading brands and creators using our software manage their social profile branding
         </p>
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-          <Input
-            type="email"
-            placeholder="Enter your email address"
-            className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 flex-grow"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <Button type="submit" className="bg-white text-gray-900 hover:bg-gray-100 px-8">
-            Get Started
-          </Button>
-        </form>
+        <Button className="bg-white text-gray-900 hover:bg-gray-100 px-8" onClick={() => setIsModalOpen(true)}>
+          Request Access
+        </Button>
       </div>
+      <TallyFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   )
 }

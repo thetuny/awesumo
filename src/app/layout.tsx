@@ -7,7 +7,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "StreamLine - AI-Powered Research Platform",
+  title: "TheTuny - Manage Social Profiles",
   description: "Hyper-accelerated research and due diligence powered by Gen-AI",
 }
 
