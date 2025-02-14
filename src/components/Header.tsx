@@ -15,7 +15,6 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <Image
-              src="/abc.svg?height=40&width=40"
               src="/logo_wt.png"
               alt="TheTuny Logo"
               width={40}
