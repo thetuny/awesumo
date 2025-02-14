@@ -13,7 +13,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: isProd ? "/awesumo" : '',
+  // basePath: isProd ? "/awesumo" : '',
 
   /**
    * Disable server-based image optimization. Next.js does not support
@@ -24,7 +24,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? '/awesumo/' : '',
+  // assetPrefix: isProd ? '/awesumo/' : '',
 };
 
 export default nextConfig;
