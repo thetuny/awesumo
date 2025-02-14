@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const testimonials = [
   {
-    content: "StreamLine has revolutionized our team's workflow. We're more productive than ever!",
+    content: "This has revolutionized our team's workflow. We're more productive than ever!",
     author: "Jane Cooper",
     role: "CEO, TechCorp",
     image: "/placeholder.svg?height=100&width=100",

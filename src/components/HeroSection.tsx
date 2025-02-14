@@ -19,7 +19,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
           <div className="space-y-8">
             <h1 className="text-5xl font-light leading-tight">
-              Automatically update Social Media Profile Picture and Banners
+              Auto update Social Media Profile Picture and Banners
             </h1>
             <div className="space-y-4">
               <p className="text-xl text-gray-400">

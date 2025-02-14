@@ -17,7 +17,7 @@ export default function CtaSection() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-light mb-4">Ready to Automate Your Social Media?</h2>
         <p className="text-gray-300 mb-8">
-          Join leading brands and creators using our platform to streamline their social media presence
+          Join leading brands and creators using our software manage their social profile branding
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
           <Input

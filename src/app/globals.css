@@ -19,3 +19,7 @@ body {
   background: rgb(var(--background));
 }
 
+html {
+  scroll-behavior: smooth;
+}
+

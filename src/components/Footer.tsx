@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800">
           <p className="text-center text-sm text-gray-400">
-            © {new Date().getFullYear()} StreamLine. All rights reserved.
+            © {new Date().getFullYear()} TheTuny. All rights reserved.
           </p>
         </div>
       </div>

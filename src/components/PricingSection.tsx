@@ -4,14 +4,14 @@ import { Check } from "lucide-react"
 const plans = [
   {
     name: "Starter",
-    price: "$29",
+    price: "$9.99",
     period: "per month",
     description: "Perfect for personal brands and creators",
     features: ["3 social media accounts", "Basic automation", "Weekly analytics", "Content calendar", "Email support"],
   },
   {
     name: "Professional",
-    price: "$99",
+    price: "$29.99",
     period: "per month",
     description: "Ideal for growing businesses",
     features: [
@@ -42,7 +42,7 @@ const plans = [
 
 export default function PricingSection() {
   return (
-    <section className="py-24 bg-white" id="pricing">
+    <section id="pricing" className="py-24 bg-white" id="pricing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-light mb-4 text-gray-900">Simple, Transparent Pricing</h2>

@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { useState } from "react"
 
+// TODO: 
+// 1. Metrics are REMOVED currently. Evaluate
 const solutions = [
   {
     id: "progress",
@@ -13,9 +15,9 @@ const solutions = [
     description: "Add dynamic progress bars to your social media icons",
     features: [
       "Customizable progress bars",
-      "Integration with various metrics",
+      "Integration with tons of metrics (More added every week)",
       "Real-time updates",
-      "Goal setting and tracking",
+      "Track your goals",
     ],
     metrics: ["Increase engagement by 30%", "Boost profile visits", "Motivate audience"],
     image: "/placeholder.svg?height=400&width=600",
@@ -36,9 +38,9 @@ const solutions = [
   },
   {
     id: "price",
-    title: "Price Movement Tracker",
-    tabTitle: "Price Tracker",
-    description: "Display real-time price movements on your profile",
+    title: "Market Tracker",
+    tabTitle: "Stock Tracker",
+    description: "Display real-time price movements of your favorite stocks, crypto",
     features: [
       "Dynamic price badges",
       "Customizable arrows and indicators",
@@ -50,14 +52,13 @@ const solutions = [
   },
   {
     id: "company",
-    title: "Product Launch Banners",
-    tabTitle: "Company Updates",
-    description: "Automatically update company banners for product launches",
+    title: "Promote Product Launch Campaigns",
+    tabTitle: "Product Campaigns",
+    description: "Automatically update brand across social platforms during campaigns",
     features: [
-      "Scheduled banner updates",
+      "Scheduled updates",
       "Multi-platform synchronization",
       "Customizable templates",
-      "Integration with product calendars",
     ],
     metrics: ["Boost launch visibility by 40%", "Increase cross-platform consistency", "Streamline marketing efforts"],
     image: "/placeholder.svg?height=400&width=600",
@@ -70,12 +71,12 @@ export default function SolutionsSection() {
   const activeSolution = solutions.find((s) => s.id === activeTab)
 
   return (
-    <section className="py-24 bg-white">
+    <section id="solutions" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-light mb-4 text-gray-900">How People are using it</h2>
+          <h2 className="text-3xl font-light mb-4 text-gray-900">How people are using it</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Enhance your social media presence with dynamic, data-driven profile elements
+            <b>TODO: Change This:</b> Enhance your social media presence with dynamic, data-driven profile elements
           </p>
         </div>
 
@@ -110,7 +111,7 @@ export default function SolutionsSection() {
                   </li>
                 ))}
               </ul>
-              <div className="pt-6">
+              {/* <div className="pt-6">
                 <h4 className="text-sm uppercase text-gray-500 mb-3">Key Benefits</h4>
                 <div className="flex flex-wrap gap-4">
                   {activeSolution.metrics.map((metric) => (
@@ -119,7 +120,7 @@ export default function SolutionsSection() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="relative">
               <Image
